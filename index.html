@@ -8,15 +8,15 @@
     <style>
         :root {
             --background: #f3f3f3;
-            --surface: #eeeeee
+            --surface: #dee6da
             ;
             --surfacealt: #eeeeee;
-            --surfacedown: #cccccc;
+            --surfacedown: #dcdcdc;
             --primary: #0078d4;
             --text-primary: #000000;
             --text-secondary: #666666;
             --border: #cccccc;
-            --borderalt:#bbbbbb;
+            --borderalt:#a8a8a8;
             --tphborder: rgb(41, 89, 246);
         }
 
@@ -25,12 +25,12 @@
                 --background: #202020;
                 --surface: #2d2d2d;
                 --surfacealt: #404040;
-                --surfacedown: #333333;
+                --surfacedown: #4d4d4d;
                 --primary: #0078d4;
                 --text-primary: #ffffff;
                 --text-secondary: #a0a0a0;
                 --border: #444444; 
-                --borderalt: #555555;        
+                --borderalt: #c6c6c6;        
                 --tphborder: cyan;   }
         }
 
@@ -133,18 +133,21 @@
             background: var(--surfacealt);
             color: var(--text-primary);
             transition: border-color 0.2s;
-            border-bottom: 2px solid var(--borderalt);
+            border-bottom: 1px solid var(--borderalt);
         }
         .input-group input:hover {
             
             background: var(--surfacedown);
         }
         .input-group input:focus {
-            border: 1px solid #666;
+           
             outline: none;
-            border-bottom: 2px solid var(--tphborder);
+            box-shadow:0px -12px 0px -10px inset var(--tphborder);
             background: var(--surface);
+           
+            
         }
+    
 
         #brightness {
             width: 100%;
@@ -236,7 +239,7 @@
                 <input type="text" id="rgb" spellcheck="false">
             </div>
             <div class="input-group">
-                <label>HSV code</label>
+                <label>HSL code</label>
                 <input type="text" id="hsl" spellcheck="false">
             </div>
              <!-- 新增CMYK输入 -->
